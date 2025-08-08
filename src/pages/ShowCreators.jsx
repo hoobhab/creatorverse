@@ -10,7 +10,7 @@ const ShowCreators = () => {
   useEffect(() => {
     const fetchCreators = async () => {
       const { data } = await supabase
-        .from('creators')
+        .from('Creators')
         .select().order("created_at", {ascending: false});
         setCreators(data)
     }
@@ -23,6 +23,7 @@ const ShowCreators = () => {
         creators && creators.length > 0 ?
           creators.map((creator, index) => 
             <Creator
+            id = {creator.id}
             name = {creator.name}
             url = {creator.url}
             description = {creator.description}

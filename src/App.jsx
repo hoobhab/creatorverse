@@ -7,6 +7,7 @@ import ViewCreator from './pages/ViewCreator'
 import AddCreator from './pages/AddCreator'
 import EditCreator from './pages/EditCreator'
 import './App.css'
+import DetailView from './pages/DetailView'
 
 function App() {
 
@@ -14,6 +15,11 @@ function App() {
         {
           path: "/",
           element: <ShowCreators />,
+        },
+
+        {
+          path: "/details/:id",
+          element: <DetailView />
         },
 
         {

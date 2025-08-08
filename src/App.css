@@ -33,8 +33,9 @@
   }
 }
 
-.card {
+.Creator {
   padding: 2em;
+  border: 1px solid black
 }
 
 .read-the-docs {
