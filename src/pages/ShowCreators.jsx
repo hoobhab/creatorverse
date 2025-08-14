@@ -1,5 +1,6 @@
 import { React } from "react";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Creator from '../components/Creator';
 import { supabase } from '../client';
 
@@ -18,6 +19,12 @@ const ShowCreators = () => {
   }, [])
 
   return (
+    <div>
+    <div className="add-creator">
+      <Link to={"AddCreator"}>
+      <button>Add creator</button>
+      </Link>
+    </div>
     <div className="show-creators">
       {
         creators && creators.length > 0 ?
@@ -31,6 +38,7 @@ const ShowCreators = () => {
             />
           ) : <p>Nothing here for now...</p>
       }
+    </div>
     </div>
   );
 };

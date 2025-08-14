@@ -8,9 +8,10 @@ const Creator = (props) => {
       <Link to={"details/" + props.id} style={{color: "black"}}>
         <h1>{props.name}</h1>
       </Link>
-        {props.url}
         {props.description}
-        {props.imageURL}
+        <p>
+        <a href={props.url}>Link</a>
+        </p>
     </div>
   );
 };

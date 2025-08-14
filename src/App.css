@@ -34,7 +34,10 @@
 }
 
 .Creator {
+  width: 20em;
+  height: 20em;
   padding: 2em;
+  margin: 2em;
   border: 1px solid black
 }
 
