@@ -33,7 +33,7 @@ function App() {
         },
 
         {
-          path: "EditCreator",
+          path: "EditCreator/:id",
           element: <EditCreator />
         }
       ])   

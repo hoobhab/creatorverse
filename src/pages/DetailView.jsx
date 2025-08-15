@@ -32,6 +32,12 @@ const DetailView = ({}) => {
         <div className="detail-header">
           <h2>{creator.name}</h2>
         </div>
+        <Link to={"/" + "EditCreator/" + id} style={{color: "black"}}>
+          Update creator
+        </Link>
+        <img
+        alt="Image of content creator"
+        src={creator.imageURL} />
         <p className="description">{creator.description}</p>
       </div>
     </div>
