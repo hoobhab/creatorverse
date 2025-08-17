@@ -55,6 +55,8 @@ const AddCreator = () => {
             placeholder="Enter a description of the content creator here"
             onChange={handleChange}
           ></textarea>
+          <label for="url">Creator page URL</label>
+          <input type="text" id="url" name="url" onChange={handleChange} />
           <label for="image">Image (optional)</label>
           <input type="text" id="imageURL" name="imageURL" onChange={handleChange} />
           <input type="submit" value="Submit" onClick={createNewCreator} />
