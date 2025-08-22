@@ -20,6 +20,7 @@ const ShowCreators = () => {
 
   return (
     <div>
+    <div className="front-page-container">
     <div className="add-creator">
       <Link to={"AddCreator"}>
       <button>Add creator</button>
@@ -38,6 +39,7 @@ const ShowCreators = () => {
             />
           ) : <p>Nothing here for now...</p>
       }
+    </div>
     </div>
     </div>
   );

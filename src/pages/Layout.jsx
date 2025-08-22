@@ -4,10 +4,12 @@ const Layout = () => {
     
     return(
         <div>
-            <div className="navbar">
-                <Link to="/">
-                    Home
+            <div className="header-bar">
+                <div className="home">
+                <Link style={{color: "black"}}to="/">
+                    <h1>Creatorverse</h1>
                 </Link>
+                </div>
             </div>
             <Outlet />
         </div>

@@ -44,8 +44,11 @@ const AddCreator = () => {
     <div className="AddCreator">
         <h1>Add new creator</h1>
         <form className="add-creator-form">
+          <p>
           <label for="name">Name</label>
           <input type="text" id="name" name="name" onChange={handleChange} />
+          </p>
+          <p>
           <label for="description">Description</label>
           <textarea
             rows="10"
@@ -55,10 +58,15 @@ const AddCreator = () => {
             placeholder="Enter a description of the content creator here"
             onChange={handleChange}
           ></textarea>
+          </p>
+          <p>
           <label for="url">Creator page URL</label>
           <input type="text" id="url" name="url" onChange={handleChange} />
+          </p>
+          <p>
           <label for="image">Image (optional)</label>
           <input type="text" id="imageURL" name="imageURL" onChange={handleChange} />
+          </p>
           <input type="submit" value="Submit" onClick={createNewCreator} />
         </form>
     </div>

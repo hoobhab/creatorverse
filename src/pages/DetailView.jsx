@@ -22,7 +22,7 @@ const DetailView = ({}) => {
 
     await supabase.from("Creator").delete().eq("id", id);
 
-    window.location = "/";
+    window.location = "/"; 
   };
 
 
@@ -31,14 +31,16 @@ const DetailView = ({}) => {
       <div className="detail-page">
         <div className="detail-header">
           <h2>{creator.name}</h2>
+          <a class="creator-link" href={creator.url}>Link</a>
         </div>
-        <Link to={"/" + "EditCreator/ " + id} style={{color: "black"}}>
-          Update creator
-        </Link>
         <img
+        class="creator"
         alt="Image of content creator"
         src={creator.imageURL} />
         <p className="description">{creator.description}</p>
+        <Link to={"/" + "EditCreator/ " + id} style={{color: "black"}}>
+          <button>Update creator</button>
+        </Link>
       </div>
     </div>
   );

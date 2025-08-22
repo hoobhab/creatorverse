@@ -56,6 +56,7 @@ const EditCreator = (props) => {
   return (
     <div className="EditCreator">
       <form>
+        <p>
         <label for="name">Name</label>
         <input
           type="text"
@@ -64,6 +65,8 @@ const EditCreator = (props) => {
           onChange={handleChange}
           defaultValue={currCreator.name}
         />
+        </p>
+        <p>
         <label for="description">Description</label>
         <textarea
           rows="5"
@@ -73,11 +76,16 @@ const EditCreator = (props) => {
           defaultValue={currCreator.description}
           onChange={handleChange}
         ></textarea>
+        </p>
+        <p>
         <label for="imageURL">Image URL</label> <br />
         <input type="text" id="imageURL" name="imageURL" defaultValue={currCreator.imageURL} onChange={handleChange} />
+        </p>
+        <p>
         <label for="url">Creator Page</label> <br />
         <input type="text" id="url" name="url" defaultValue={creator.url} onChange={handleChange} />
-        <input type="submit" value="Submit Update" onClick={updateCreator} />
+        </p>
+        <button type="submit" value="Submit Update" onClick={updateCreator}>Submit Update</button>
         <button className="deleteButton" onClick={deleteCreator}>
           Delete Creator
         </button>

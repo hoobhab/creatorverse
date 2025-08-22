@@ -18,11 +18,11 @@ const Creator = (props) => {
         </p>
       </div>
       <p>
-        <img alt="Image of content creator" src={props.imageURL} />
+        <img class="creator" alt="Image of content creator" src={props.imageURL} />
       </p>
       {props.description}
       <p>
-        <a href={props.url}>Link</a>
+        <a class="creator-link" href={props.url}>🔗 Youtube</a>
       </p>
     </div>
   );
