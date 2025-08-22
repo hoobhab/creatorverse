@@ -31,7 +31,7 @@ const DetailView = ({}) => {
       <div className="detail-page">
         <div className="detail-header">
           <h2>{creator.name}</h2>
-          <a class="creator-link" href={creator.url}>Link</a>
+          <a class="creator-link detail" href={creator.url}>🔗 Link</a>
         </div>
         <img
         class="creator"

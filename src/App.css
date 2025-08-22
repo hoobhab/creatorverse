@@ -54,6 +54,10 @@ img.creator {
   left: 1em;
 }
 
+.creator-link.detail{
+  position: static;
+}
+
 .read-the-docs {
   color: #888;
 }
